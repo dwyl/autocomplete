@@ -5,9 +5,8 @@ var fs = require('fs');
 var index = fs.readFileSync(__dirname + '/index.html');
 
 http.createServer(function handler (request, response) {
-
-  console.log(request.url);
   var url = request.url;
+  console.log("request.url:", url);
   if(url.length === 1) {
     response.writeHead(200, {"Content-Type": "text/html"});
     response.end(index.toString());
