@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "coverage": "./node_modules/.bin/istanbul cover test/test.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/nelsonic/autocomplete/issues"
   },
-  "homepage": "https://github.com/nelsonic/autocomplete"
+  "homepage": "https://github.com/nelsonic/autocomplete",
+  "devDependencies": {
+    "istanbul": "^0.3.14"
+  }
 }

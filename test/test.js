@@ -5,7 +5,7 @@ assert.equal(typeof ac, 'object');
 assert.equal(typeof ac.import, 'function');
 
 console.log("# ac.import imports a list of words into memory");
-ac.import(function (words) {
+ac.import(function (err, words) {
   console.log("words.txt had " + words.length + " words in it!");
   assert.equal(words.length, 235887);
 });
@@ -16,12 +16,20 @@ var error = ac.import('string');
 assert.equal(error.message, 'callback argument MUST be a function');
 
 console.log('# ac.findWord finds a string in words array');
-ac.import(function(){
+ac.import(function() {
   ac.findWord('awes', function (err, found) {
-    assert.equal(err, null);
-    // console.log(' - - - - - - - - - - - - - ')
-    // console.log(found);
-    // console.log(' - - - - - - - - - - - - - ')
     assert.equal(found.length, 4);
   });
-})
+});
+
+console.log('# ac.stats tracks which words/string were searched for');
+ac.import(function() {
+  ac.stats('rubies', function (err, stats) {
+    console.log(stats);
+    assert.equal(stats['rubies'].length, 1);
+    ac.stats('rubies', function (err, stats) {
+      console.log(stats);
+      assert.equal(stats['rubies'].length, 2);
+    });
+  });
+});
