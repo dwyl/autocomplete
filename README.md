@@ -1,4 +1,4 @@
-# autocomplete
+# Word Finder (*autocomplete*)
 
 Finding words in the dictionary used to be tedious and slow!
 Now, its fast, easy and fun!  
@@ -30,7 +30,7 @@ npm install
 npm test
 ```
 
-#### Run the Server:
+#### Run the Server with [Nodemon](https://github.com/remy/nodemon):
 
 ```sh
 npm run nodemon
@@ -75,6 +75,9 @@ In your module (index.js)
 
 2. [ ] Display a stats (*searches*) of the words people have looked up in an intuitive and creative way!
 
+> Note: even though you are running nodemon you still *may* not see the latest changes in your browser when you refresh the page...
+sometimes you might need to completely re-start the server `npm run nodemon` to get the page to completely refresh ...
+
 ### Repo Owner
 
 + [x] Add a ***.jshintrc*** file to your project
@@ -99,5 +102,43 @@ see: https://github.com/dwyl/repo-badges
 e.g: Search for Tweets based on the word the person looked up!
 or pictures on instagram, or news articles, etc.
 
-Figure out a creative way of displaying this content with the lookup
-without making it look cluttered or out of place.
+Figure out a *creative* way of displaying this content
+without making it look cluttered or out of place. (*as always*, #***MobileFirst*** #***FTW***)
+
+## Make the UI *even more intuitive*!
+
++ [ ] hightlight the characters the person typed in the word suggestions
+
+## Search for a string of characters *anywhere* in the word!
+
+![find all the suggestions](http://i.imgur.com/yCAcCuB.jpg)
+
+Returning words that *start* with the characters the person typed is cool. But, what about returning **all** the words that *contain* the characters in the order the person typed them.
+(i.e. ***way more suggestions*** *so that this can be used as a scrabble word finder!*)
+
+e.g: a search for ***awe***
+
+could return:
+```
+adawe, awe, awearied, aweary, aweather, aweband, awedness, awee, aweek,
+aweel, aweigh, awesome, awesomely, awesomeness, awest, aweto, chawer,
+clapperclawer, clawed, clawer, cockawee, dewclawed, drawee, drawer, drawers,
+flawed, fleaweed, gewgawed, gimbaljawed, gimberjawed, gnawer, hawer, jawed,
+jimberjawed, keawe, knawel, Meccawee, megaweber, outawe, overawe, overdrawer,
+overjawed, pawer, plugdrawer, predrawer, quartersawed, redrawer, resawer,
+ rondawel, Sandawe, sawed, sawer, scrofulaweed, seaweed, seaweedy, strawen,
+strawer, tawer, tawery, thawer, toothdrawer, ultrawealthy, unawed, unchawed,
+unclawed, underdrawers, underjawed, unflawed, unlawed, unoutlawed, unpawed,
+unsawed, untawed, unthawed, wickawee, wiredrawer, withdrawer, wittawer
+```
+
+not just:
+```
+awe, awearied, aweary, aweather, aweband, awedness, awee, aweek, aweel,
+aweigh, awesome, awesomely, awesomeness, awest, aweto
+```
+
+Making this *usable* relies on writing a front-end function
+to sort the results into those which ***start*** with the typed characters, and those which merely contain them.
+and displaying the results segmented accordingly.
+Also it will look a *lot* better if the characters the person typed were *hightlighted* in the list of word suggestions.
