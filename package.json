@@ -1,0 +1,28 @@
+{
+  "name": "autocomplete-fac",
+  "version": "1.0.0",
+  "description": "find words in English dictionary with autosuggestion!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelsonic/autocomplete.git"
+  },
+  "keywords": [
+    "autocomplete",
+    "english",
+    "dictionary",
+    "suggestions"
+  ],
+  "author": "@nelsonic <contact.nelsonic@gmail.com> (https://github.com/nelsonic)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsonic/autocomplete/issues"
+  },
+  "homepage": "https://github.com/nelsonic/autocomplete"
+}
