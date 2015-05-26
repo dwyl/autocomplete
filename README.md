@@ -46,10 +46,10 @@ npm run nodemon
 
 ### Autocomplete HTTP Server (API)
 
-+ [ ] serve an html page with a search box
-+ [ ] expose the findWords method as an API endpoint /find/:word
-+ [ ] display the ***definition*** of a word when the person clicks/taps (or navigates using the keyboard arrows - for extra credits!) to their desired word
-+ [ ] display the history of words people have searched for
++ [ ] serve an html page with a ***search box***
++ [ ] expose the `ac.findWords` method as an API endpoint /find/:word
++ [ ] display the ***definition*** of a word when the person clicks/taps (*or navigates using the keyboard arrows - for extra credits*!) to their desired word
++ [ ] display the ***history*** of words people have searched for
 
 
 # Goals (*in your teams of 4*)
@@ -62,7 +62,7 @@ npm run nodemon
 
 In your module (index.js)
 + [ ] write a ***test*** for a new method "**define**" which will return a `callback(err, definition)` when you call it in the following way: `ac.define(word, callaback)`
-+ [ ] write the `ac.define` method to **request** a word definition from Wiktionary API
++ [ ] write the `ac.define` method to **request** a word definition from Wiktionary API (*requires google skillz*! - *document your finding!!*)
   + [ ] parse the result of this API request and extract the definition
   + [ ] return the *just* the definition to the client for display in the UI when client visits url: **/define/awesome**
 + [ ] expose the **searches** property of the **ac** module url: /searches/ should return a json object which the client can interpret and display
@@ -71,12 +71,14 @@ In your module (index.js)
 
 ### Front end / UX (*fun zone*!)
 
-1. [ ] Using the knowledge of QUnit for front-end TDD you gained in the last two weeks, build great user experience for searching words! (you can build ("*fake*") the front-end (*look-and-feel*) )
+1. [ ] Wireframe a great word searching user experience!
 
-2. [ ] Display a stats (*searches*) of the words people have looked up in an intuitive and creative way!
+2. [ ] Using the knowledge of QUnit for front-end TDD you gained in the last two weeks, build great user experience for searching words! (tip: you can build ("*fake*") the front-end (*look-and-feel*) while your back-end colleagues are building the endpoint(s) ...)
 
-> Note: even though you are running nodemon you still *may* not see the latest changes in your browser when you refresh the page...
-sometimes you might need to completely re-start the server `npm run nodemon` to get the page to completely refresh ...
+3. [ ] Display a stats (*searches*) for the words people have looked up in an intuitive and creative way!
+
+> **Note**: even though you are running nodemon you still *may* not see the latest changes in your browser when you refresh the page...
+sometimes you might need to completely ***re-start the server*** `npm run nodemon` to get the page to completely refresh ...
 
 ### Repo Owner
 
