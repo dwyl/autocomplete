@@ -1,6 +1,6 @@
 {
-  "name": "autocomplete-fac",
-  "version": "1.0.0",
+  "name": "autocomplete-new",
+  "version": "1.0.1",
   "description": "find words in English dictionary with autosuggestion!",
   "main": "index.js",
   "directories": {
