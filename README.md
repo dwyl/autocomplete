@@ -1,9 +1,15 @@
 # autocomplete
 
-Easily find words in the english dictionary
+Finding words in the dictionary used to be tedious and slow!
+Now, its fast, easy and fun!  
+***autocomplete*** lets you ***easily find words in the english dictionary***!
 
 [![Build Status](https://travis-ci.org/docdis/autocomplete.svg)](https://travis-ci.org/docdis/autocomplete)
 [![Code Climate](https://codeclimate.com/github/docdis/autocomplete/badges/gpa.svg)](https://codeclimate.com/github/docdis/autocomplete)
+[![Test Coverage](https://codeclimate.com/github/docdis/autocomplete/badges/coverage.svg)](https://codeclimate.com/github/docdis/autocomplete/coverage)
+[![Dependency Status](https://david-dm.org/docdis/autocomplete.svg)](https://david-dm.org/docdis/autocomplete)
+[![devDependency Status](https://david-dm.org/docdis/autocomplete/dev-status.svg)](https://david-dm.org/docdis/autocomplete#info=devDependencies)
+
 
 ## Features
 
@@ -19,7 +25,9 @@ Easily find words in the english dictionary
 + [ ] expose the findWords method as an API endpoint /find/:word
 
 
-## Stretch Goals!
+# Goals (*in your teams of 4*)
+
+## Pair 1
 
 ### Backend
 
@@ -30,6 +38,8 @@ Easily find words in the english dictionary
   + [ ] return the *just* the definition to the client for display in the UI when client visits url: **/define/awesome**
 + [ ] expose the **searches** property of the **ac** module url: /searches/ should return a json object which the client can interpret and display
 
+## Pair 2
+
 ### Front End / UX
 
 1. [ ] Using the knowledge of QUnit for front-end TDD you gained in the last two weeks, build great user experience for searching words! *go*!
@@ -38,11 +48,13 @@ Easily find words in the english dictionary
 
 ### Repo Owner
 
-+ [x] Add a ***.jshintrc*** file to your project and a ***pre-commit hook*** to lint
-your code *before* you can commit (*unlinted*) code. (*code quality/consistency #FTW!*)
++ [x] Add a ***.jshintrc*** file to your project
++ [x] learn about ***pre-commit hooks*** and add a pre-commit hook to lint
+your code *before* anyone can commit (*unlinted*) code. (*code quality/consistency #FTW!*)
 + [x] Learn about ***CodeClimate***, signup using your GitHub account and add badge to repo readme.
 + [x] Learn about (*Continuous Integration*) ***Travis-CI*** and
   + [x] add .**travis.yml** to your repo
   + [x] add "***build passing***" badge to your readme
++ [x] Add **Dependencies Badge** to your readme
 
 see: https://github.com/dwyl/repo-badges
