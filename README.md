@@ -1,7 +1,7 @@
 # Word Finder (*autocomplete*)
 
-Finding words in the dictionary used to be tedious and slow!
-Now, its fast, easy and fun!  
+***Finding words*** in the dictionary used to be tedious and slow!
+Now, its ***fast, easy and fun***!  
 ***autocomplete*** lets you ***easily find words in the english dictionary***!
 
 [![Build Status](https://travis-ci.org/docdis/autocomplete.svg)](https://travis-ci.org/docdis/autocomplete)

@@ -1,5 +1,5 @@
 {
-  "name": "autocomplete-new",
+  "name": "word-finder",
   "version": "1.0.3",
   "description": "find words in English dictionary with autosuggestion!",
   "main": "index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nelsonic/autocomplete.git"
+    "url": "https://github.com/docdis/autocomplete.git"
   },
   "keywords": [
     "autocomplete",
@@ -29,9 +29,9 @@
   "author": "@nelsonic <contact.nelsonic@gmail.com> (https://github.com/nelsonic)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nelsonic/autocomplete/issues"
+    "url": "https://github.com/docdis/autocomplete/issues"
   },
-  "homepage": "https://github.com/nelsonic/autocomplete",
+  "homepage": "https://github.com/docdis/autocomplete",
   "devDependencies": {
     "codeclimate-test-reporter": "0.0.4",
     "istanbul": "^0.3.14",
