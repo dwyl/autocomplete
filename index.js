@@ -12,11 +12,11 @@ ac.import = function (callback) {
   });
 }
 
-ac.stats = function(word, callback) {
-  if(!ac.searches){
+ac.stats = function (word, callback) {
+  if (!ac.searches) {
     ac.searches = {};
   }
-  if(!ac.searches[word]){
+  if (!ac.searches[word]) {
     ac.searches[word] = [];
   }
   ac.searches[word].push(new Date().getTime());
@@ -26,8 +26,8 @@ ac.stats = function(word, callback) {
 ac.findWord = function (word, callback) {
   // who wants to volunteer to implement the method?
   var found = [];
-  for (var i = 0; i < ac.words.length; i++){
-    if(ac.words[i].search(word) === 0){
+  for (var i = 0; i < ac.words.length; i++) {
+    if (ac.words[i].search(word) === 0) {
       found.push(ac.words[i]);
     }
   }
