@@ -1,4 +1,4 @@
-# Word Finder (*autocomplete*)
+# Word Finder (*autocomplete*) Mini (*Full-Stack*!) Project
 
 ***Finding words*** in the dictionary used to be tedious and slow!
 Now, its ***fast, easy and fun***!  
@@ -68,7 +68,7 @@ npm run nodemon
 
 ## Pair 1
 
-### Back end (*plumbers*)
+### Back end (*AKA "plumbers"* ... *un*-[***resilient***](http://en.wikipedia.org/wiki/Psychological_resilience) *people look elsewhere*!)
 
 + [ ] create an ***endpoint*** in server.js for the format: /define/:word which uses the ac module's findWords method to lookup word suggestions and returns an array of these suggestions as the http response
 
@@ -81,7 +81,7 @@ In your module (index.js)
 
 ## Pair 2
 
-### Front end / UX (*fun zone*!)
+### Front end / UX ([*the fun zone*](https://goo.gl/mYVqp0)!)
 
 1. [ ] Wireframe a great word searching user experience!
 
@@ -158,4 +158,4 @@ and displaying the results segmented accordingly.
 Also it will look a *lot* better if the characters the person typed were *hightlighted* in the list of word suggestions.
 
 **Note**: you will need to update your test for the number of
-results returned by the `ac.findWords` method to reflect the wider search... 
+results returned by the `ac.findWords` method to reflect the wider search...
