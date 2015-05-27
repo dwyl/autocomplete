@@ -8,7 +8,6 @@
   },
   "scripts": {
     "test": "node test/test.js",
-    "coverage": "./node_modules/.bin/istanbul cover test/test.js",
     "nocov": "node test/*.js",
     "coverage": "./node_modules/.bin/istanbul cover test/*.js && ./node_modules/.bin/istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
     "codeclimate": "CODECLIMATE_REPO_TOKEN=1c0b40358b6943d3ecd94d6254d5cd2ac5dfc51188b4019bfca83b9b8a3542e2 ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info",

@@ -7,10 +7,9 @@
     <div id='main'>
       <h1>Search your words!</h1>
       <input type='text' id='search'> </input>
+      <div id='results'> </div>
     </div>
 
-
-    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.18.0.css">
     <style>
 
 body {
@@ -18,24 +17,50 @@ body {
   height: 100%
 }
 #main {
-  height: 70%;
+  height: 30%;
 }
 #quint {
-  height: 30%;
+  height: 70%;
   bottom: 0;
   position: fixed;
 }
     </style>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.18.0.css">
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
     <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+
     <script>
 
-test('this is a strict test', function(){
-  ok(true===true);
+test('Search for words beginning with awes', function(assert){
+  var done = assert.async();
+  $.get('/find/awes', function handler(data) {
+    console.log(data);
+    var words = data.split(',');
+    assert.equal(words.length, 4, 'number of suggestions for awes is 4');
+  });
 });
 
     </script>
+
+
+<script>
+  $('#search').keyup(function(e) {
+    var word = $('#search').val();
+    if (word.length > 2) {
+      $.get('/find/'+word, function handler(data) {
+        console.log(data);
+        var words = data.split(',');
+        var results = '';
+        for(var i=0; i < words.length; i++) {
+          results += "<p> " + words[i] + "</p>";
+        }
+        $('#results').html(results);
+      });
+    }
+  })
+</script>
+
   </body>
 </html>
