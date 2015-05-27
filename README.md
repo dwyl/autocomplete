@@ -156,3 +156,6 @@ Making this *usable* relies on writing a front-end function
 to sort the results into those which ***start*** with the typed characters, and those which merely contain them.
 and displaying the results segmented accordingly.
 Also it will look a *lot* better if the characters the person typed were *hightlighted* in the list of word suggestions.
+
+**Note**: you will need to update your test for the number of
+results returned by the `ac.findWords` method to reflect the wider search... 
