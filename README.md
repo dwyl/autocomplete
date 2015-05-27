@@ -79,6 +79,8 @@ In your module (index.js)
   + [ ] return the *just* the definition to the client for display in the UI when client visits url: **/define/awesome**
 + [ ] expose the **searches** property of the **ac** module url: /searches/ should return a json object which the client can interpret and display
 
+> *Hint*: http://www.mediawiki.org/wiki/API:Tutorial + http://stackoverflow.com/questions/4175533/wikionary-api-meaning-of-words (*note*: you will need to put your thinking cap on for this challenge!)
+
 ## Pair 2
 
 ### Front end / UX ([*the fun zone*](https://goo.gl/mYVqp0)!)
