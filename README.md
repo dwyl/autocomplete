@@ -16,6 +16,8 @@ Learning how to build full-stack single-page apps can be laborious when the exam
 
 ## What?
 
+A ***great*** (*search*) **word finder** (*user experience*) *always* starts with ***autocomplete***. Then when the person clicks/taps on the word they want the definition for, we show them the definition ***fast***!
+
 > Insert links to Heroku examples + screenshots here once FAC5 have completed their projects! :wink:
 
 ## How?
